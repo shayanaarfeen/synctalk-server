@@ -27,9 +27,9 @@ app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
 
-app.use("/user", userRoutes);
-app.use("/chat", chatRoutes);
-app.use("/message", messageRoutes);
+app.use("/api/user", userRoutes);
+app.use("/api/chat", chatRoutes);
+app.use("/api/message", messageRoutes);
 
 // Error Handling middlewares
 app.use(notFound);
